@@ -15,7 +15,7 @@ st.set_page_config(
 # --- 2. FUNGSI PEMUATAN DATA & PELATIHAN MODEL ---
 @st.cache_data
 def load_and_train():
-    DATA_PATH = 'F:\Download\Data\data_penjualan.csv' # Pastikan nama file sesuai
+    DATA_PATH = 'data_penjualan.csv' # Pastikan nama file sesuai
     try:
         df = pd.read_csv(DATA_PATH, sep=';')
     except FileNotFoundError:
